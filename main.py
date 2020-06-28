@@ -31,7 +31,7 @@ test_images, test_labels = load_mnist_train('ANN\\mnist', 't10k')
 test_images = test_images/255
 test_goals = onehot(test_labels, 10)
 
-recognizeFigure = Net([784, 14, 10])
+recognizeFigure = Net([784, 14, 14, 10])
 print('Training: 0.00%')
 for j in range(iteratin):
     for i in range(train):
